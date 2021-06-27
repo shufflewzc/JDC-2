@@ -8,3 +8,19 @@
 
 JDC-arm arm平台（未测试，请自测）
 
+### 6月27日 临时解决办法（本地局域网的就不需要这个办法了。仓库内的JDC就可以使用的。）
+
+原理：本地搭建服务器将获取到的cookies同步到远程服务器青龙平台中。
+
+使用方法：
+windows用户请下载windows目录的所有文件
+
+linux用户请下载linux目录的所有文件
+
+然后修改config.toml内的QLip为远程服务器的IP地址或者域名
+	token与远程服务器青龙目录下/config/auth.json内的token数值保持一致
+	
+linux运行：./JDCC
+Windows运行 JDC.exe
+
+最后打开http://127.0.0.1:5702就可以使用了。
